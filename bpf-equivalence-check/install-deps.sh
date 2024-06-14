@@ -6,5 +6,6 @@ chmod +x llvm.sh
 sudo ./llvm.sh 14
 
 sudo apt update
-sudo apt install cmake libbsd-dev
-sudo apt install clang llvm libelf-dev libpcap-dev gcc-multilib build-essential linux-headers-$(uname -r) linux-tools-common linux-tools-generic tcpdump
+sudo apt install cmake libbsd-dev libjson-c-dev
+sudo apt install clang llvm libelf-dev libpcap-dev gcc-multilib build-essential linux-tools-common linux-tools-generic tcpdump
+sudo apt install linux-headers-$(uname -r)
