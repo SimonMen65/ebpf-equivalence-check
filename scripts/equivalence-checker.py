@@ -251,8 +251,14 @@ def check_equivalence(progA_output_dir, progA_file, progB_output_dir, progB_file
 
     
 def main(progA, progB, equivalence_bin, output_dir):
-    logger.debug('Starting equivalence check')
+    '''
+    1. generate tests cases of both progA and progB
 
+    2. compile progA & progB, build original, --> object file with original libbpf
+
+    3. 
+    '''
+    logger.debug('Starting equivalence check')
     progA_output_dir = "progA_test_cases"
     progB_output_dir = "progB_test_cases"
 
