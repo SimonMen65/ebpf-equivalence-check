@@ -143,6 +143,14 @@ def compare_json_files(file1, file2):
     return ycm.diff()
 
 def check_equivalence(progA_output_dir, progA_file, progB_output_dir, progB_file, equivalence_bin, output_dir):
+    '''
+    1.  create out put folders:
+        progA_testA_folder, progB_testA_folder, progB_testB_folder, progA_testB_files
+
+    2. 
+    '''
+
+
     # I am not going to run the first program with its own test cases, and generate the output
     # then, I will run the second program with the test cases of the first program, and compare the outputs
     # I will do the same thing for the second program

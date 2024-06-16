@@ -3,4 +3,5 @@
 include ../Makefile
 
 XDP_TARGETS := lb_kern
+XDP_BPF_TARGETS := lb_kern
 XDP_FUNCTION := xdp_prog_simple
