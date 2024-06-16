@@ -98,6 +98,8 @@ xdp-target-runtest: $(XDP_C) Makefile $(KERN_USER_H) $(EXTRA_DEPS)
 
 xdp-target-origin: $(XDP_BPF) Makefile $(KERN_USER_H) $(EXTRA_DEPS)
 	cp ${XDP_BPF:.c=.h} $(XDP_BPF)
+	@echo "XDP_BPF: $(XDP_BPF)"
+	@echo "Header: ${XDP_BPF:.c=.h}"
 	$(CLANG) \
 	    -D __BPF_TRACING__ \
 	    $(BPF_CFLAGS_ORIGIN) -DDEBUG \
